@@ -92,3 +92,6 @@ $ openstack security group rule create --proto icmp --remote-ip 0.0.0.0/0 allow_
 $ openstack security group show allow_ssh_https_icmp_secgroup2
 
 ```
+```
+$ ssh-keygen -b 4096 -C MY-KEY -t rsa -N '' -f my-key
+```
