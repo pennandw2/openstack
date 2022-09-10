@@ -94,6 +94,24 @@ outputs:
     value: { get_attr: [ pan_untrust_floating_ip, floating_ip_address ] }
 ```
 ## COMMANDS
+
+* Launch heat template build:
+```
+openstack stack create -f yaml -t pan.yml --parameter mgmt_network="internal-oam" --parameter public_network="untrust-b" --parameter pan_flavor="vFW-8-16-60" --parameter pan_image="Palo Alto VM-Series 10.1.6" PAN-FW-01
+
+```
+* Show heat template build:
+```
+openstack stack event list PAN-FW-01
+```
+* Show heat template:
+```
+openstack stack show PAN-FW-01
+```
+* Show all heat templates:
+```
+openstack stack list
+```
 * Show all compute instances:
 ```
 openstack server list
