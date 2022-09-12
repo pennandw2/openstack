@@ -95,3 +95,9 @@ $ openstack security group show allow_ssh_https_icmp_secgroup2
 ```
 $ ssh-keygen -b 4096 -C MY-KEY -t rsa -N '' -f my-key
 ```
+
+* Releases a IP value in ssh known host file
+
+```
+ssh-keygen -R 172.21.81.244
+```
